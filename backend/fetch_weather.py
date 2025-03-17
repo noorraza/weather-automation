@@ -1,6 +1,9 @@
+from flask import Flask, jsonify
 import requests
+from dotenv import load_dotenv
+import os
 
-API_KEY = "79ff95a0f0222d6aa309b8876233a6f9"
+API_KEY = os.getenv("OPENWEATHER_API_KEY")
 CITY = "Ottawa"
 BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
 
