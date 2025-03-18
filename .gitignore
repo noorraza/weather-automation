@@ -12,6 +12,3 @@ build/
 
 # Misc
 .DS_Store
-git remote add origin https://github.com/noorraza/weather-automation.git
-git branch -M main
-git push -u origin main

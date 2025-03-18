@@ -2,8 +2,10 @@ from flask import Flask, jsonify
 import requests
 from dotenv import load_dotenv
 import os
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 API_KEY = os.getenv("OPENWEATHER_API_KEY")
 CITY = "Ottawa"
